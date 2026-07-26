@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:8080"
+    baseURL: "https://asset-management-b0dmbrdehecgamcp.southindia-01.azurewebsites.net"
 });
 
 api.interceptors.request.use((config) => {
