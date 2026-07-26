@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
-import "../styles/Categories.css";
+import "../styles/categories.css";
 import api from "../services/api";
 import { FaPlus, FaEdit, FaTrash } from "react-icons/fa";
 
