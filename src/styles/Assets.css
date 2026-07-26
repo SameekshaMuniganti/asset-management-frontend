@@ -1,0 +1,301 @@
+.assets-page {
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.assets-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.assets-header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #0f172a;
+}
+
+.assets-header p {
+    margin-top: 8px;
+    color: #64748b;
+}
+
+/* ===========================
+   Add Button
+=========================== */
+
+.add-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.add-btn:hover {
+    background: #1d4ed8;
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.assets-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.assets-card h2 {
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.assets-card input,
+.assets-card select {
+
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.assets-card input:focus,
+.assets-card select:focus {
+    border-color: #2563eb;
+}
+
+/* ===========================
+   Table
+=========================== */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+thead th {
+    background: #1E293B;   /* Same as Sidebar */
+    color: #FFFFFF;
+
+    padding: 16px;
+    text-align: left;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+thead th:first-child {
+    border-top-left-radius: 12px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 12px;
+}
+td {
+    padding: 15px;
+    border-bottom: 1px solid #E2E8F0;
+    color: #334155;
+}
+
+tbody tr {
+    background: #FFFFFF;
+    transition: 0.25s ease;
+}
+
+tbody tr:hover {
+    background: #F8FAFC;
+}
+/* ===========================
+   Action Buttons
+=========================== */
+
+.action-buttons{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.edit-btn,
+.delete-btn{
+
+    width:46px;
+    height:46px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:none;
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:20px;   /* Bigger icon */
+
+    transition:all .3s ease;
+}
+
+/* Edit */
+
+.edit-btn{
+    background:#EEF2FF;
+    color:#4F46E5;
+}
+
+.edit-btn:hover{
+    background:#4F46E5;
+    color:#fff;
+    transform:scale(1.08);
+}
+
+/* Delete */
+
+.delete-btn{
+    background:#FEF2F2;
+    color:#DC2626;
+}
+
+.delete-btn:hover{
+    background:#DC2626;
+    color:#fff;
+    transform:scale(1.08);
+}
+
+/* ===========================
+   Status Badge
+=========================== */
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+.status-badge.available {
+    background: #DBEAFE;
+    color: #2563EB;
+}
+
+.status-badge.assigned {
+    background: #DCFCE7;
+    color: #15803D;
+}
+
+.status-badge.maintenance {
+    background: #FEF3C7;
+    color: #B45309;
+}
+
+.status-badge.retired {
+    background: #E5E7EB;
+    color: #374151;
+}
+/* ===========================
+   Responsive - Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+    .assets-page {
+        padding: 20px;
+    }
+
+    .assets-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .assets-header h1 {
+        font-size: 28px;
+    }
+
+    .assets-card {
+        padding: 20px;
+    }
+
+    .action-buttons {
+        gap: 6px;
+    }
+}
+
+/* ===========================
+   Responsive - Mobile
+=========================== */
+
+@media (max-width: 600px) {
+
+    .assets-page {
+        padding: 15px;
+    }
+
+    .assets-header h1 {
+        font-size: 24px;
+    }
+
+    .assets-card {
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+
+    .action-buttons {
+        gap: 6px;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+    }
+
+    .status-badge {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .add-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

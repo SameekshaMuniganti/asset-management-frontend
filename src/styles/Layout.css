@@ -1,0 +1,36 @@
+.app-layout {
+    min-height: 100vh;
+    background: #f8fafc;
+    display: flex;
+}
+
+
+.main-area {
+
+    margin-left:270px;
+
+    width:calc(100% - 260px);
+
+}
+
+
+.page-content {
+
+    padding:30px;
+
+}
+
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .main-area{
+
+        margin-left:0;
+
+        width:100%;
+
+    }
+
+}
